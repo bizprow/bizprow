@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BJF0KBE0K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4BJF0KBE0K');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boostory | Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #fefefe;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #212529;
+    }
+    .brand-primary { color: #1e40af; }
+    .brand-accent { color: #fbbf24; }
+    .bg-accent { background: #fbbf24; }
+    .btn-primary {
+      background-color: #1e40af;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #3b82f6;
+    }
+    nav {
+      background: #fefefe;
+      box-shadow: 0 2px 10px rgb(30 64 175 / 0.2);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.75rem;
+      color: #1e40af;
+    }
+    .nav-link {
+      font-weight: 600;
+      color: #1e40af;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #fbbf24;
+    }
+    .hero {
+      background: linear-gradient(135deg, #e0e7ff 0%, #fefefe 100%);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-weight: 800;
+      font-size: 3rem;
+      color: #1e40af;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #374151;
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      margin-bottom: 4rem;
+    }
+    form .form-control {
+      border-radius: 8px;
+      box-shadow: none;
+      border-color: #d1d5db;
+    }
+    form .btn {
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    footer {
+      background: #1e40af;
+      color: #fefefe;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="d-flex align-items-center justify-content-between">
+    <a href="index.html" class="navbar-brand">Boostory</a>
+    <ul class="nav">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="bundles.html" class="nav-link">SEO Bundles</a></li>
+      <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Let’s Grow Your Business</h1>
+    <p>Have questions or need a custom SEO solution? We’re here to help.</p>
+  </section>
+
+  <section class="container" style="max-width: 720px;">
+    <h2 class="mb-4 text-center brand-primary">Contact Form</h2>
+    <form action="https://formspree.io/f/mvgrqzdj" method="POST" onsubmit="redirectThankYou(event)">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" name="name" id="name" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" name="email" id="email" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea name="message" id="message" rows="5" class="form-control" placeholder="Tell us what you need..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary px-4">Send Message</button>
+    </form>
+  </section>
+
+  <section id="custom-request" class="container mt-5 mb-5" style="max-width: 720px;">
+    <h2 class="text-center brand-primary mb-4">Request a Custom Bundle</h2>
+    <p class="text-center mb-4">Need something more tailored? We’ll design a custom SEO solution to match your unique goals. Fill out the form above and include details about what you’re looking for.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Boostory — Built by Nicholas Rivard with creativity, clarity, and code.
+  </footer>
+
+  <script>
+    function redirectThankYou(event) {
+      event.preventDefault();
+      const form = event.target;
+
+      // Simulate a short delay then redirect
+      setTimeout(() => {
+        window.location.href = 'thank-you.html';
+      }, 1000);
+
+      form.submit();
+    }
+  </script>
+</body>
+</html>
